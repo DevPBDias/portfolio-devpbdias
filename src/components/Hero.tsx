@@ -83,13 +83,15 @@ export function Hero() {
         <div className="w-full max-w-6xl mx-auto flex flex-col pt-12 md:pt-0 md:absolute md:bottom-16 md:left-4 lg:left-8 z-30">
           <div className="max-w-xs sm:max-w-sm lg:max-w-xl mx-auto md:mx-0 flex flex-col items-center md:items-start text-center md:text-left bg-background/40 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none p-6 md:p-0 rounded-xl space-y-6 md:space-y-6">
             <h2 className="text-white font-bold text-base sm:text-lg lg:text-xl tracking-wider uppercase leading-snug">
-              Desenvolvedor Front-end <span className="text-primary">&</span>{" "}
-              UX/UI Designer
+              Desenvolvedor Web <span className="text-primary">&</span> UX/UI
+              Designer
             </h2>
             <p className="text-foreground/80 text-xs sm:text-sm md:text-base font-sans leading-relaxed">
-              Transformando ideias em interfaces envolventes através do
-              desenvolvimento robusto e design centrado no usuário, para
-              conectar marcas aos seus melhores clientes no mundo digital.
+              Atuo no desenvolvimento de aplicações web performáticas e
+              escaláveis com React, Next.js, Node.js e TypeScript, construindo
+              interfaces de alta qualidade, integradas a APIs e otimizadas para
+              oferecer experiências modernas, eficientes e orientadas a
+              resultados.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4 w-full md:w-auto">
               <a
