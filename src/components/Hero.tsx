@@ -40,7 +40,7 @@ export function Hero() {
           <div className="pt-8 lg:pt-0" />
 
           {/* Split Typography - Diagonal Alignment on all screens, but Centered block on Mobile */}
-          <div className="font-heading font-black text-primary/90 flex flex-col w-fit mx-auto md:mx-0 md:w-full relative z-10 cursor-default">
+          <div className="hidden md:flex font-heading font-black text-primary/90 flex-col w-fit mx-auto md:mx-0 md:w-full relative z-10 cursor-default">
             <div className="relative hover:scale-[1.02] transition-transform w-fit z-10">
               <div className="absolute -top-1 -left-1 sm:-top-2 sm:-left-3 text-outline select-none text-[clamp(4.5rem,11vw,9rem)] leading-[0.8] tracking-tighter opacity-80">
                 DE
@@ -50,7 +50,7 @@ export function Hero() {
               </div>
             </div>
 
-            <div className="relative hover:scale-[1.02] transition-transform w-fit ml-[12vw] md:ml-[25%] mt-2 sm:mt-4 md:mt-6 z-20">
+            <div className="relative hover:scale-[1.02] transition-transform w-fit ml-[12vw] md:ml-[25%] mt-2 sm:mt-1 md:mt-6 z-20">
               <div className="absolute -top-1 -left-1 sm:-top-2 sm:-left-3 text-outline select-none text-[clamp(4.5rem,11vw,9rem)] leading-[0.8] tracking-tighter opacity-80">
                 VE
               </div>
@@ -59,7 +59,7 @@ export function Hero() {
               </div>
             </div>
 
-            <div className="relative hover:scale-[1.02] transition-transform w-fit ml-[24vw] md:ml-[50%] mt-2 sm:mt-4 md:mt-6 z-30">
+            <div className="relative hover:scale-[1.02] transition-transform w-fit ml-[24vw] md:ml-[50%] mt-2 sm:mt-1 md:mt-6 z-30">
               <div className="absolute -top-1 -left-1 sm:-top-2 sm:-left-3 text-outline select-none text-[clamp(4.5rem,11vw,9rem)] leading-[0.8] tracking-tighter opacity-80">
                 LO
               </div>
@@ -68,7 +68,7 @@ export function Hero() {
               </div>
             </div>
 
-            <div className="relative hover:scale-[1.02] transition-transform w-fit ml-[36vw] md:ml-[70%] mt-2 sm:mt-4 md:mt-6 z-40">
+            <div className="relative hover:scale-[1.02] transition-transform w-fit ml-[36vw] md:ml-[70%] mt-2 sm:mt-1 md:mt-6 z-40">
               <div className="absolute -top-1 -left-1 sm:-top-2 sm:-left-3 text-outline select-none text-[clamp(4.5rem,11vw,9rem)] leading-[0.8] tracking-tighter opacity-80">
                 PER
               </div>
@@ -80,13 +80,13 @@ export function Hero() {
         </div>
 
         {/* Bottom descriptive block - Centered on mobile, aligned near bottom on desktop */}
-        <div className="w-full max-w-6xl mx-auto flex flex-col pt-12 md:pt-0 md:absolute md:bottom-16 md:left-4 lg:left-8 z-30">
-          <div className="max-w-xs sm:max-w-sm lg:max-w-xl mx-auto md:mx-0 flex flex-col items-center md:items-start text-center md:text-left bg-background/40 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none p-6 md:p-0 rounded-xl space-y-6 md:space-y-6">
-            <h2 className="text-white font-bold text-base sm:text-lg lg:text-xl tracking-wider uppercase leading-snug">
+        <div className="w-full max-w-6xl mx-auto flex flex-col pt-8 md:pt-0 md:absolute md:bottom-16 md:left-4 lg:left-8 z-30">
+          <div className="max-w-xs sm:max-w-sm lg:max-w-xl mx-auto md:mx-0 flex flex-col items-center md:items-start text-center md:text-left bg-background/40 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none p-4 md:p-0 rounded-xl space-y-4 md:space-y-6">
+            <h2 className="text-white font-bold text-sm sm:text-base lg:text-xl tracking-wider uppercase leading-snug">
               Desenvolvedor Web <span className="text-primary">&</span> UX/UI
               Designer
             </h2>
-            <p className="text-foreground/80 text-xs sm:text-sm md:text-base font-sans leading-relaxed">
+            <p className="text-foreground/80 text-xs sm:text-xs md:text-base font-sans leading-relaxed">
               Atuo no desenvolvimento de aplicações web performáticas e
               escaláveis com React, Next.js, Node.js e TypeScript, construindo
               interfaces de alta qualidade, integradas a APIs e otimizadas para
