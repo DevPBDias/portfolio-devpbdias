@@ -10,7 +10,7 @@ function ProjectCard({ project, index }: { project: Project, index: number }) {
         {/* Image Display */}
         <div className="w-full aspect-16/10 bg-black/40 flex items-center justify-center relative overflow-hidden shrink-0">
           {project.image ? (
-             <Image sizes="(max-width: 768px) 100vw, 50vw" src={project.image} alt={project.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500 z-0" />
+             <Image sizes="(max-width: 768px) 100vw, 50vw" src={project.image} alt={project.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500 z-0" priority={index < 2} />
           ) : (
              <span className="text-foreground/30 font-mono text-sm z-10">[ Project Image ]</span>
           )}

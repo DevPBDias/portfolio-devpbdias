@@ -16,7 +16,7 @@ export function Hero() {
             src="/assets/Hero.png"
             alt="Hero Background"
             fill
-            sizes="100vw"
+            sizes="(min-width: 768px) 100vw, 0vw"
             className="object-cover object-center"
             priority
           />
@@ -28,7 +28,7 @@ export function Hero() {
             src="/assets/Hero mobile.png"
             alt="Hero Background Mobile"
             fill
-            sizes="100vw"
+            sizes="(max-width: 768px) 100vw, 0vw"
             className="object-cover object-top"
             priority
           />

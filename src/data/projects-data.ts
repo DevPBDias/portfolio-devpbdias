@@ -84,14 +84,13 @@ export const projects: Project[] = [
       "Aplicativo corporativo PWA com arquitetura Offline-First (Local-First) projetado para a gestão de rebanhos de alto desempenho. Permite 100% de funcionalidade sem internet, garantindo registro de animais, controle reprodutivo, pesagens, vacinas e relatórios através da reatividade do RxDB e sincronização bidirecional em tempo real com o Supabase.",
     image: "/images/indi_ouro_thumbnail.png",
     technologies: [
-      "Next.js",
       "React",
-      "TypeScript",
-      "RxDB",
-      "Dexie",
+      "Next.js",
       "Supabase",
+      "RxDB",
+      "TypeScript",
+      "Dexie",
       "Tailwind CSS",
-      "Capacitor",
       "Framer Motion",
     ],
     features: [
@@ -145,7 +144,7 @@ export const projects: Project[] = [
       "Sistema fullstack para controle de produção industrial, gerenciamento de matérias-primas e sugestão de fabricação otimizada.",
     longDescription:
       "Desenvolvido como teste técnico, este sistema fullstack em Node.js e Next.js realiza o controle de produção industrial. Ele gerencia produtos, matérias-primas e a composição de itens (Bill of Materials), oferecendo um algoritmo inteligente de sugestão que calcula a capacidade de produção baseada no estoque disponível focando na maior lucratividade.",
-    image: "/images/autoflex.png",
+    image: "/images/autoflex_thumbnail.png",
     technologies: [
       "Next.js",
       "React",
