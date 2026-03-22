@@ -1,6 +1,7 @@
 import { techsInfiniteScroll } from "@/data/techs-data";
 import { Container } from "./ui/Container";
 import Image from "next/image";
+import { ScrollReveal } from "./ui/ScrollReveal";
 
 export function Hero() {
   return (
@@ -10,7 +11,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-linear-to-b from-black/0 via-black/50 to-background z-10 pointer-events-none" />
 
         {/* Desktop Background */}
-        <div className="hidden md:block absolute inset-0">
+        <div className="hidden md:block absolute inset-0 animate-bg-pan">
           <Image
             src="/assets/Hero.png"
             alt="Hero Background"
@@ -22,7 +23,7 @@ export function Hero() {
         </div>
 
         {/* Mobile Background */}
-        <div className="block md:hidden absolute inset-0">
+        <div className="block md:hidden absolute inset-0 animate-bg-pan">
           <Image
             src="/assets/Hero mobile.png"
             alt="Hero Background Mobile"
@@ -41,46 +42,56 @@ export function Hero() {
 
           {/* Split Typography - Diagonal Alignment on all screens, but Centered block on Mobile */}
           <div className="hidden md:flex font-heading font-black text-primary/90 flex-col w-fit mx-auto md:mx-0 md:w-full relative z-10 cursor-default">
-            <div className="relative hover:scale-[1.02] transition-transform w-fit z-10">
-              <div className="absolute -top-1 -left-1 sm:-top-2 sm:-left-3 text-outline select-none text-[clamp(4.5rem,11vw,9rem)] leading-[0.8] tracking-tighter opacity-80">
-                DE
+            
+            <ScrollReveal delay={0}>
+              <div className="relative hover:scale-[1.02] transition-transform w-fit z-10 animate-float">
+                <div className="absolute -top-1 -left-1 sm:-top-2 sm:-left-3 text-outline select-none text-[clamp(4.5rem,11vw,9rem)] leading-[0.8] tracking-tighter opacity-80">
+                  DE
+                </div>
+                <div className="relative text-glow mix-blend-screen text-[clamp(4.5rem,11vw,9rem)] leading-[0.8] tracking-tighter">
+                  DE
+                </div>
               </div>
-              <div className="relative text-glow mix-blend-screen text-[clamp(4.5rem,11vw,9rem)] leading-[0.8] tracking-tighter">
-                DE
-              </div>
-            </div>
+            </ScrollReveal>
 
-            <div className="relative hover:scale-[1.02] transition-transform w-fit ml-[12vw] md:ml-[25%] mt-2 sm:mt-1 md:mt-6 z-20">
-              <div className="absolute -top-1 -left-1 sm:-top-2 sm:-left-3 text-outline select-none text-[clamp(4.5rem,11vw,9rem)] leading-[0.8] tracking-tighter opacity-80">
-                VE
+            <ScrollReveal delay={200} className="ml-[12vw] md:ml-[25%] mt-2 sm:mt-1 md:mt-6 z-20">
+              <div className="relative hover:scale-[1.02] transition-transform w-fit animate-float" style={{ animationDelay: "1s" }}>
+                <div className="absolute -top-1 -left-1 sm:-top-2 sm:-left-3 text-outline select-none text-[clamp(4.5rem,11vw,9rem)] leading-[0.8] tracking-tighter opacity-80">
+                  VE
+                </div>
+                <div className="relative text-glow mix-blend-screen text-[clamp(4.5rem,11vw,9rem)] leading-[0.8] tracking-tighter">
+                  VE
+                </div>
               </div>
-              <div className="relative text-glow mix-blend-screen text-[clamp(4.5rem,11vw,9rem)] leading-[0.8] tracking-tighter">
-                VE
-              </div>
-            </div>
+            </ScrollReveal>
 
-            <div className="relative hover:scale-[1.02] transition-transform w-fit ml-[24vw] md:ml-[50%] mt-2 sm:mt-1 md:mt-6 z-30">
-              <div className="absolute -top-1 -left-1 sm:-top-2 sm:-left-3 text-outline select-none text-[clamp(4.5rem,11vw,9rem)] leading-[0.8] tracking-tighter opacity-80">
-                LO
+            <ScrollReveal delay={400} className="ml-[24vw] md:ml-[50%] mt-2 sm:mt-1 md:mt-6 z-30">
+              <div className="relative hover:scale-[1.02] transition-transform w-fit animate-float" style={{ animationDelay: "2s" }}>
+                <div className="absolute -top-1 -left-1 sm:-top-2 sm:-left-3 text-outline select-none text-[clamp(4.5rem,11vw,9rem)] leading-[0.8] tracking-tighter opacity-80">
+                  LO
+                </div>
+                <div className="relative text-glow mix-blend-screen text-[clamp(4.5rem,11vw,9rem)] leading-[0.8] tracking-tighter">
+                  LO
+                </div>
               </div>
-              <div className="relative text-glow mix-blend-screen text-[clamp(4.5rem,11vw,9rem)] leading-[0.8] tracking-tighter">
-                LO
-              </div>
-            </div>
+            </ScrollReveal>
 
-            <div className="relative hover:scale-[1.02] transition-transform w-fit ml-[36vw] md:ml-[70%] mt-2 sm:mt-1 md:mt-6 z-40">
-              <div className="absolute -top-1 -left-1 sm:-top-2 sm:-left-3 text-outline select-none text-[clamp(4.5rem,11vw,9rem)] leading-[0.8] tracking-tighter opacity-80">
-                PER
+            <ScrollReveal delay={600} className="ml-[36vw] md:ml-[70%] mt-2 sm:mt-1 md:mt-6 z-40">
+              <div className="relative hover:scale-[1.02] transition-transform w-fit animate-float" style={{ animationDelay: "3s" }}>
+                <div className="absolute -top-1 -left-1 sm:-top-2 sm:-left-3 text-outline select-none text-[clamp(4.5rem,11vw,9rem)] leading-[0.8] tracking-tighter opacity-80">
+                  PER
+                </div>
+                <div className="relative text-glow mix-blend-screen text-[clamp(4.5rem,11vw,9rem)] leading-[0.8] tracking-tighter">
+                  PER
+                </div>
               </div>
-              <div className="relative text-glow mix-blend-screen text-[clamp(4.5rem,11vw,9rem)] leading-[0.8] tracking-tighter">
-                PER
-              </div>
-            </div>
+            </ScrollReveal>
+
           </div>
         </div>
 
         {/* Bottom descriptive block - Centered on mobile, aligned near bottom on desktop */}
-        <div className="w-full max-w-6xl mx-auto flex flex-col pt-8 md:pt-0 md:absolute md:bottom-16 md:left-4 lg:left-8 z-30">
+        <ScrollReveal delay={800} className="w-full max-w-6xl mx-auto flex flex-col pt-8 md:pt-0 md:absolute md:bottom-16 md:left-4 lg:left-8 z-30">
           <div className="max-w-xs sm:max-w-sm lg:max-w-xl mx-auto md:mx-0 flex flex-col items-center md:items-start text-center md:text-left bg-background/40 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none p-4 md:p-0 rounded-xl space-y-4 md:space-y-6">
             <h2 className="text-white font-bold text-sm sm:text-base lg:text-xl tracking-wider uppercase leading-snug">
               Desenvolvedor Web <span className="text-primary">&</span> UX/UI
@@ -108,7 +119,7 @@ export function Hero() {
               </a>
             </div>
           </div>
-        </div>
+        </ScrollReveal>
       </Container>
 
       {/* Infinite Looping Marquee exactly at the bottom border of the viewport - Fix squish on mobile */}

@@ -95,17 +95,30 @@ export default async function ProjectDetailsPage({ params }: { params: Promise<{
                  <p className="text-foreground/80 font-sans leading-relaxed text-sm md:text-base">
                     {project.longDescription}
                  </p>
-                 {project.longDescription === project.description && (
-                   <p className="text-foreground/80 font-sans leading-relaxed text-sm md:text-base mt-4">
-                      Este projeto foi desenvolvido com as mais recentes arquiteturas e visa resolver problemas clássicos através de uma interface intuitiva e uma estrutura de código resiliente, priorizando desde a escalabilidade até a adoção e adaptação da melhor experiência de usuário possível no contexto envolvido.
-                   </p>
-                 )}
               </div>
+
+              {/* Tópico: Principais Funcionalidades */}
+              {project.features && project.features.length > 0 && (
+                <div className="space-y-4">
+                   <h3 className="text-xl font-bold text-white flex items-center gap-2">
+                      <span className="w-4 h-4 rounded bg-primary/30 flex items-center justify-center text-[10px] text-primary">02</span>
+                      Principais Funcionalidades
+                   </h3>
+                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2">
+                     {project.features.map((feature, i) => (
+                        <li key={i} className="flex gap-3 bg-white/5 border border-white/10 p-4 rounded-xl items-start shadow-sm hover:border-primary/30 hover:bg-white/10 transition-colors">
+                          <span className="text-primary mt-0.5">•</span>
+                          <span className="text-foreground/90 font-sans text-sm">{feature}</span>
+                        </li>
+                     ))}
+                   </ul>
+                </div>
+              )}
 
               {/* Tópico: Tecnologias Utilizadas */}
               <div className="space-y-4">
                  <h3 className="text-xl font-bold text-white flex items-center gap-2">
-                    <span className="w-4 h-4 rounded bg-primary/30 flex items-center justify-center text-[10px] text-primary">02</span>
+                    <span className="w-4 h-4 rounded bg-primary/30 flex items-center justify-center text-[10px] text-primary">03</span>
                     Stack Tecnológico
                  </h3>
                  <div className="flex flex-wrap gap-2 pt-2">

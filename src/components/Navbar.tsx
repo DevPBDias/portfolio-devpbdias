@@ -13,9 +13,12 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 py-6 backdrop-blur-sm bg-background/50 border-b border-white/5">
       <Container className="flex items-center justify-between gap-8">
         {/* LOGO */}
-        <div className="text-primary font-heading font-black tracking-widest text-lg sm:text-xl">
+        <a
+          href="#"
+          className="text-primary hover:text-white transition-colors cursor-pointer select-none font-heading font-black tracking-widest text-lg sm:text-xl"
+        >
           DevPBDias
-        </div>
+        </a>
 
         <div className="flex items-center gap-8">
           <ul className="hidden md:flex items-center gap-8">
