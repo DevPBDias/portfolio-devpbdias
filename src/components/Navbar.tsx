@@ -34,7 +34,7 @@ export function Navbar() {
             ))}
           </ul>
           <Link
-            href="#contato"
+            href="https://wa.me/5563992310976"
             className="bg-white text-black px-6 py-2.5 rounded-sm font-bold tracking-widest text-[10px] sm:text-xs hover:bg-gray-200 transition-colors"
           >
             CONTRATAR
